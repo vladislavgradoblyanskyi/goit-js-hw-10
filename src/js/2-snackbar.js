@@ -9,7 +9,7 @@ form.addEventListener('submit',(event) => {
     event.preventDefault();
 
     const radio = document.querySelector('[name="state"]:checked');
-    const delay = document.querySelector('input[name="state"]').value;
+    const delay = +(form.elements.delay.value);
 
     const promise  = new Promise((resolve,reject) =>{
     setTimeout(() =>{
